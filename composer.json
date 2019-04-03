@@ -1,0 +1,29 @@
+{
+  "name": "octopusz/aliyun-iot",
+  "description": "aliyun-iot",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "octopusz",
+      "email": "lizhonglin_melody@yeah.net"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Octopusz\\AliyunIot\\": "src/",
+      "Octopusz\\Iot\\Request\\V20170420\\": "Iot/Request/V20170420",
+      "Octopusz\\Iot\\Request\\V20180120\\": "Iot/Request/V20180120",
+      "Octopusz\\Iot\\Core\\Auth\\": "Iot/aliyun-php-sdk-core/Auth",
+      "Octopusz\\Iot\\Core\\Exception\\": "Iot/aliyun-php-sdk-core/Exception",
+      "Octopusz\\Iot\\Core\\Profile\\": "Iot/aliyun-php-sdk-core/Profile",
+      "Octopusz\\Iot\\Core\\Request\\": "Iot/aliyun-php-sdk-core/Request",
+      "Octopusz\\Iot\\Core\\Regions\\": "Iot/aliyun-php-sdk-core/Regions",
+      "Octopusz\\Iot\\Core\\Autoloader\\": "Iot/aliyun-php-sdk-core/Autoloader",
+      "Octopusz\\Iot\\Core\\": "Iot/aliyun-php-sdk-core/"
+    }
+  }
+}
