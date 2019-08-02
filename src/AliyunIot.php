@@ -5,11 +5,13 @@ namespace Octopusz\AliyunIot;
 use Octopusz\Iot\Core\Autoloader;
 use Octopusz\Iot\Core\DefaultAcsClient;
 use Octopusz\Iot\Core\Profile\DefaultProfile;
+use Octopusz\Iot\Request\V20180120\BatchQueryDeviceDetailRequest;
 use Octopusz\Iot\Request\V20180120\DeleteDeviceRequest;
 use Octopusz\Iot\Request\V20180120\BatchCheckDeviceNamesRequest;
 use Octopusz\Iot\Request\V20180120\BatchRegisterDeviceRequest;
 use Octopusz\Iot\Request\V20180120\GetDeviceStatusRequest;
 use Octopusz\Iot\Request\V20180120\PubRequest;
+use Octopusz\Iot\Request\V20180120\QueryDeviceDetailRequest;
 use Octopusz\Iot\Request\V20180120\RegisterDeviceRequest;
 use Octopusz\Iot\Request\V20180120\CreateProductRequest;
 use Octopusz\Iot\Request\V20170420\UpdateProductRequest;
@@ -241,6 +243,35 @@ class AliyunIot
         $request->setProductKey($productKey);
         return $this->_client->getAcsResponse($request);
 
+    }
+
+    /**
+     * 查询指定设备的详细信息
+     * @param $deviceName
+     * @param $productKey
+     * @return mixed|\SimpleXMLElement
+     */
+    public function queryDeviceDetail($deviceName, $productKey)
+    {
+        $request = new QueryDeviceDetailRequest();
+        $request->setDeviceName($deviceName);
+        $request->setProductKey($productKey);
+        return $this->_client->getAcsResponse($request);
+
+    }
+
+    /**
+     * 批量获取设备的详细信息
+     * @param $productKey
+     * @param $deviceName
+     * @return mixed|\SimpleXMLElement
+     */
+    public function batchQueryDeviceDetail($productKey, $deviceName)
+    {
+        $request = new BatchQueryDeviceDetailRequest();
+        $request->setProductKey($productKey);
+        $request->setDeviceNames($deviceName);
+        return $this->_client->getAcsResponse($request);
     }
 
 }
