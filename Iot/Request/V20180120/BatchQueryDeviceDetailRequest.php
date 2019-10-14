@@ -13,7 +13,7 @@ class BatchQueryDeviceDetailRequest extends RpcAcsRequest
 {
     function __construct()
     {
-        parent::__construct('Iot', '2019-08-02', 'BatchQueryDeviceDetail');
+        parent::__construct('Iot', '2018-01-20', 'BatchQueryDeviceDetail');
         $this->setMethod('POST');
     }
 
@@ -21,7 +21,7 @@ class BatchQueryDeviceDetailRequest extends RpcAcsRequest
 
     private  $productKey;
 
-    public function getDeviceName() {
+    public function getDeviceNames() {
         return $this->DeviceNames;
     }
 

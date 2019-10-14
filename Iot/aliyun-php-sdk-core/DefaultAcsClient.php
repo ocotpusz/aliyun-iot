@@ -22,6 +22,7 @@ use Octopusz\Iot\Core\Regions\LocationService;
 use Octopusz\Iot\Core\Regions\EndpointProvider;
 use Octopusz\Iot\Core\Exception\ClientException;
 use Octopusz\Iot\Core\Http\HttpHelper;
+use Octopusz\Iot\Core\Exception\ServerException;
 class DefaultAcsClient implements IAcsClient
 {
     public $iClientProfile;
