@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ca18b8e2-f295-413e-b6b1-dbd5807e4317" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iot/Request/V20180120/BatchQueryDeviceDetailRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Iot/Request/V20180120/BatchQueryDeviceDetailRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iot/aliyun-php-sdk-core/DefaultAcsClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/Iot/aliyun-php-sdk-core/DefaultAcsClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iot/Request/V20180120/QueryProductTopicRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Iot/Request/V20180120/QueryProductTopicRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AliyunIot.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AliyunIot.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,37 +19,37 @@
     <session id="-702892537">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="json" value="4" />
+          <entry key="json" value="5" />
           <entry key="md" value="2" />
-          <entry key="php" value="33" />
+          <entry key="php" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="4" />
+          <entry key="JSON" value="5" />
           <entry key="Markdown" value="2" />
-          <entry key="PHP" value="33" />
+          <entry key="PHP" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="17" />
-          <entry key="php" value="627" />
+          <entry key="php" value="1103" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="17" />
-          <entry key="PHP" value="627" />
+          <entry key="PHP" value="1103" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -64,11 +64,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AliyunIot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="272" column="43" lean-forward="true" selection-start-line="272" selection-start-column="43" selection-end-line="272" selection-end-column="43" />
+            <state relative-caret-position="598">
+              <caret line="275" column="5" lean-forward="true" selection-start-line="275" selection-start-column="5" selection-end-line="275" selection-end-column="5" />
               <folding>
                 <element signature="e#38#71#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iot/Request/V20180120/QueryProductTopicRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iot/Request/V20180120/PubRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -92,9 +110,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/AliyunIot.php" />
         <option value="$PROJECT_DIR$/Iot/Request/V20180120/BatchQueryDeviceDetailRequest.php" />
         <option value="$PROJECT_DIR$/Iot/aliyun-php-sdk-core/DefaultAcsClient.php" />
+        <option value="$PROJECT_DIR$/Iot/Request/V20180120/QueryProductTopicRequest.php" />
+        <option value="$PROJECT_DIR$/src/AliyunIot.php" />
       </list>
     </option>
   </component>
@@ -104,7 +123,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="-4307" />
     <option name="y" value="102" />
     <option name="width" value="1680" />
@@ -116,6 +135,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,13 +146,25 @@
             <path>
               <item name="aliyun-iot" type="b2602c69:ProjectViewProjectNode" />
               <item name="aliyun-iot" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Iot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aliyun-iot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aliyun-iot" type="462c0819:PsiDirectoryNode" />
+              <item name="Iot" type="462c0819:PsiDirectoryNode" />
+              <item name="Request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aliyun-iot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aliyun-iot" type="462c0819:PsiDirectoryNode" />
+              <item name="Iot" type="462c0819:PsiDirectoryNode" />
+              <item name="Request" type="462c0819:PsiDirectoryNode" />
+              <item name="V20180120" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,17 +200,19 @@
       <workItem from="1564714693528" duration="6528000" />
       <workItem from="1564732608737" duration="2283000" />
       <workItem from="1564739217889" duration="852000" />
+      <workItem from="1571016379246" duration="768000" />
+      <workItem from="1574209048977" duration="1641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11060000" />
+    <option name="totallyTimeSpent" value="13469000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4307" y="102" width="1680" height="949" extended-state="0" />
+    <frame x="-4480" y="-48" width="2560" height="1440" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23504274" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23828435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -287,13 +321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Iot/Request/V20180120/BatchQueryDeviceDetailRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -309,7 +336,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Iot/aliyun-php-sdk-core/DefaultAcsClient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="-1220">
           <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding>
             <element signature="e#845#891#0#PHP" expanded="true" />
@@ -317,10 +344,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Iot/Request/V20180120/QueryProductRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iot/Request/V20180120/QueryProductListRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iot/Request/V20180120/PubRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iot/Request/V20180120/QueryProductTopicRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AliyunIot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="272" column="43" lean-forward="true" selection-start-line="272" selection-start-column="43" selection-end-line="272" selection-end-column="43" />
+        <state relative-caret-position="598">
+          <caret line="275" column="5" lean-forward="true" selection-start-line="275" selection-start-column="5" selection-end-line="275" selection-end-column="5" />
           <folding>
             <element signature="e#38#71#0#PHP" expanded="true" />
           </folding>

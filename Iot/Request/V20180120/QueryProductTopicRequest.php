@@ -17,9 +17,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Iot\Request\V20180120;
+namespace Octopusz\Iot\Request\V20180120;
 
-class QueryProductTopicRequest extends \RpcAcsRequest
+use Octopusz\Iot\Core\RpcAcsRequest;
+
+class QueryProductTopicRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{

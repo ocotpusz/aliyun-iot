@@ -12,6 +12,7 @@ use Octopusz\Iot\Request\V20180120\BatchRegisterDeviceRequest;
 use Octopusz\Iot\Request\V20180120\GetDeviceStatusRequest;
 use Octopusz\Iot\Request\V20180120\PubRequest;
 use Octopusz\Iot\Request\V20180120\QueryDeviceDetailRequest;
+use Octopusz\Iot\Request\V20180120\QueryProductTopicRequest;
 use Octopusz\Iot\Request\V20180120\RegisterDeviceRequest;
 use Octopusz\Iot\Request\V20180120\CreateProductRequest;
 use Octopusz\Iot\Request\V20170420\UpdateProductRequest;
@@ -271,6 +272,36 @@ class AliyunIot
         $request = new BatchQueryDeviceDetailRequest();
         $request->setProductKey($productKey);
         $request->setDeviceNames($deviceName);
+        return $this->_client->getAcsResponse($request);
+    }
+
+
+    /**
+     * 同步任务
+     * @param $topicFullName
+     * @param $qos
+     * @param $messageContent
+     * @param $productKey
+     * @return mixed|\SimpleXMLElement
+     */
+    public function syncTask($topicFullName, $qos, $messageContent, $productKey)
+    {
+        $request = new PubRequest();
+        $request->setProductKey($productKey);
+        $request->setMessageContent($messageContent);
+        $request->setQos($qos);
+        $request->setTopicFullName($topicFullName);
+        return $this->_client->getAcsResponse($request);
+    }
+
+    /** 获取产品的topic类
+     * @param $productKey
+     * @return mixed|\SimpleXMLElement
+     */
+    public function queryProductTopic($productKey)
+    {
+        $request = new QueryProductTopicRequest();
+        $request->setProductKey($productKey);
         return $this->_client->getAcsResponse($request);
     }
 
