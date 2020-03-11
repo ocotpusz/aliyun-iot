@@ -277,14 +277,14 @@ class AliyunIot
 
 
     /**
-     * 同步任务
+     * 发送指令
      * @param $topicFullName
      * @param $qos
      * @param $messageContent
      * @param $productKey
      * @return mixed|\SimpleXMLElement
      */
-    public function syncTask($topicFullName, $qos, $messageContent, $productKey)
+    public function sendCommand($topicFullName, $qos, $messageContent, $productKey)
     {
         $request = new PubRequest();
         $request->setProductKey($productKey);
